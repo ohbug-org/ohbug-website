@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://www.joaopedro.cc/img/github/typescript-gatsby-starter.png" alt="Gatsby and TypeScript">
-</p>
+# Ohbug WebSite
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
@@ -13,8 +11,6 @@
 </p>
 
 <br>
-
-A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start 🔥
 
 No plugins installed, great for advanced users.
 
@@ -31,7 +27,7 @@ No plugins installed, great for advanced users.
 The best way to start with this template is using the Gatsby CLI.
 
 ```
-gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
+gatsby new starter-ts https://github.com/ohbug-org/ohbug-website
 ```
 
 If you prefer you can clone this repository and run the following commands inside the project folder:
@@ -56,4 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ---
 
-Made with ♥ by João Pedro Schmitz
+Made with ♥ by [chenyueban](https://github.com/chenyueban)

@@ -1,0 +1,53 @@
+@import '~@/styles/theme.less';
+
+:global {
+  .hljs {
+    font-family: 'JetBrains Mono';
+    padding: @space-2;
+    border-radius: @radius * 2;
+  }
+}
+
+.root {
+  position: relative;
+  box-shadow: @box-shadow-2;
+  font-family: 'JetBrains Mono';
+
+  .language {
+    position: absolute;
+    left: @space-2;
+    top: 0;
+    padding: 2px 6px;
+    line-height: 1;
+    border-radius: 0 0 @radius @radius;
+    background-color: @primary-color;
+    color: @white;
+    box-shadow: @box-shadow;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+
+  .copy {
+    outline: none;
+    border: none;
+    position: absolute;
+    right: @space;
+    top: 0;
+    line-height: 1;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 0 0 @radius @radius;
+    background: transparent;
+    color: fade(@white, 60%);
+    transition: @transition;
+
+    &:not(.disabledCopy):hover {
+      background: @primary-color;
+      color: @white;
+      box-shadow: @box-shadow;
+    }
+    &.disabledCopy {
+      cursor: not-allowed;
+    }
+  }
+}

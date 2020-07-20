@@ -1,0 +1,25 @@
+@import '~@/styles/theme.less';
+
+.itemSelected {
+  background-color: darken(@primary-color, 2%) !important;
+}
+
+.root {
+  .wrapper {
+    position: fixed;
+    max-width: 300px;
+    padding-left: @space;
+
+    .title {
+      color: @text-color;
+    }
+    .content {
+      .item {
+        position: relative;
+        display: block;
+        color: fade(@text-color-inverse, 60%);
+        .ellipsis();
+      }
+    }
+  }
+}

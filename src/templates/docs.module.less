@@ -1,0 +1,52 @@
+@import '~@/styles/theme.less';
+
+.root {
+  background-color: @primary-color;
+  min-height: 100vh;
+
+  .wrapper {
+    max-width: @page-width;
+    min-height: 100vh;
+    margin: 0 auto;
+    justify-content: space-between;
+    .flex();
+
+    .container {
+      position: relative;
+      flex: 1;
+      padding: 0 @space-3 * 2 @logo-height;
+      background-color: @white;
+      box-shadow: @box-shadow-3;
+
+      .head {
+        height: @logo-height;
+        margin: 0 -@space-3 * 2;
+        padding: 0 @space-3 * 2;
+        background-color: @white;
+        .flex-between();
+
+        .button {
+          background: @white;
+          border: 1px solid @primary-color;
+          color: @primary-color;
+          border-radius: @radius;
+          text-decoration: none;
+          padding: 6px 16px;
+          cursor: pointer;
+        }
+
+        .extra {
+
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: @space-3;
+
+      .edit {
+        margin-top: @space;
+      }
+    }
+  }
+}

@@ -15,31 +15,18 @@
     "SharedArrayBuffer": "readonly"
   },
   "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
-  "extends": ["plugin:react/recommended", "airbnb", "prettier/react"],
+  "extends": ["plugin:react/recommended", "prettier/react"],
   "rules": {
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
-    "react/jsx-props-no-spreading": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never",
-        "js": "never",
-        "jsx": "never"
-      }
-    ]
+    "react/jsx-props-no-spreading": "off"
   },
   "overrides": [
     {
       "files": "**/*.+(ts|tsx)",
       "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "project": "./tsconfig.json"
-      },
       "plugins": ["@typescript-eslint/eslint-plugin"],
       "extends": [
         "plugin:@typescript-eslint/eslint-recommended",
@@ -50,13 +37,9 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/quotes": [
-          2,
-          "backtick",
-          {
-            "avoidEscape": true
-          }
-        ]
+        "operator-linebreak": "off",
+        "implicit-arrow-linebreak": "off",
+        "no-confusing-arrow": "off"
       }
     }
   ],

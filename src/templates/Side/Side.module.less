@@ -1,0 +1,66 @@
+@import '~@/styles/theme.less';
+
+@width: 288px;
+.item-selected {
+  background-color: darken(@primary-color, 2%) !important;
+  color: fade(@text-color-inverse, 80%) !important;
+  box-shadow: @box-shadow;
+}
+
+.root {
+  width: @width;
+
+  .wrapper {
+    position: fixed;
+    width: @width;
+    height: 100vh;
+    z-index: 1;
+    flex-direction: column;
+    .flex();
+
+    .logo {
+      height: @logo-height;
+      align-items: center;
+      .flex();
+      & > a {
+        flex: 1;
+        color: @text-color-inverse;
+      }
+    }
+
+    .nav {
+      flex: 1;
+      width: @width;
+      margin-top: @space-2;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      h2 {
+        border: none;
+        margin: 0;
+        font-size: 1em;
+        font-weight: 500;
+        color: @text-color-secondary;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 2em;
+      }
+      ul {
+        li {
+          & > a {
+            display: block;
+            text-decoration: none;
+            padding: 2px 0 2px @space;
+            margin-bottom: 4px;
+            border-radius: @radius 0 0 @radius;
+            color: fade(@text-color-inverse, 60%);
+            transition: @transition;
+            &:hover {
+              .item-selected();
+            }
+          }
+        }
+      }
+    }
+  }
+}

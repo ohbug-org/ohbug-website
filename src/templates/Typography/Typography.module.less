@@ -1,0 +1,68 @@
+@import '~@/styles/theme.less';
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  position: relative;
+  border: none;
+  letter-spacing: 1px;
+  & > a {
+    transition: @transition;
+    text-decoration: none;
+    opacity: 0;
+    position: absolute;
+    left: -@space-2;
+    right: 0;
+    color: @text-color-secondary;
+  }
+  &:hover {
+    & > a {
+      opacity: 1;
+    }
+  }
+}
+.h1 {
+  margin-top: 0;
+}
+.h2 {
+  padding-top: @space-2;
+  margin-top: @space-3 * 2;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: @space-2;
+    height: 4px;
+    background-color: @secondary-color;
+  }
+}
+.h3 {
+  margin-top: @space-3;
+}
+.h4 {
+  margin-top: @space-3;
+}
+.h5 {
+  margin-top: @space-3;
+}
+.h6 {
+  margin-top: @space-3;
+}
+.p {
+  color: @text-color;
+  .h1+& {
+    font-size: 1.2em;
+    color: @text-color;
+  }
+}
+.code {
+  display: inline-block;
+  background-color: @light-color;
+  border-radius: @radius;
+  color: @text-color-active;
+  font-family: 'JetBrains Mono';
+  font-size: 0.8em;
+  line-height: inherit;
+  padding: 0 4px;
+}
+a {
+  color: @primary-color;
+}

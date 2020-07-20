@@ -1,0 +1,70 @@
+// base colors
+@light-color: #f6f8fc;
+@white: #fff;
+@black: #333;
+@secondary-color: #fdc8c4;
+@primary-color: #FF6F61;
+@success-color: #389E0D;
+@info-color: #018BE0;
+@warning-color: #FA8C16;
+@error-color: #CF1322;
+@highlight-color: #FF8C81;
+@body-background: #ffffff;
+@layout-body-background: #fbfbfb;
+
+// text
+@text-color: fade(@black, 70%);
+@text-color-secondary: fade(@black, 45%);
+@text-color-active: fade(@black, 85%);
+@text-color-inverse: @white;
+
+// shadow
+@shadow-color: fade(@black, 6%);
+@shadow-color-2: fade(@black, 40%);
+@box-shadow: 0 2px 6px @shadow-color;
+@box-shadow-2: 0px 2px 6px @shadow-color-2;
+@box-shadow-3: 0px 10px 45px 4px @shadow-color;
+
+// space
+@space: 12px;
+@space-2: 24px;
+@space-3: 36px;
+
+@radius: 2px;
+@radius-2: 8px;
+@radius-3: 16px;
+
+// transition
+@transition: all 0.3s ease;
+
+@page-width: 1440px;
+@logo-height: 100px;
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// flex
+.flex {
+  display: flex;
+}
+.flex-center {
+  .flex();
+
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  .flex();
+
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-around {
+  .flex();
+
+  align-items: center;
+  justify-content: space-around;
+}
