@@ -3,14 +3,11 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=for-the-badge&color=24B36B&labelColor=000000">
-
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=for-the-badge&color=24B36B&labelColor=000000" alt="Follow @jpedroschmitz" />
-  </a>
+  <img alt="License" src="https://img.shields.io/github/license/ohbug-org/ohbug-website?style=for-the-badge&color=24B36B&labelColor=000000">
 </p>
-
 <br>
+
+Forked from [gatsby-starter-ts](https://github.com/jpedroschmitz/gatsby-starter-ts).
 
 No plugins installed, great for advanced users.
 

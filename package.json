@@ -1,6 +1,6 @@
 {
   "name": "ohbug-website",
-  "description": "Ohbug is monitoring & reporting tool for app stability.",
+  "description": "Ohbug's website and documentation.",
   "version": "0.0.0",
   "private": true,
   "author": "chenyueban <jasonchan0527@gmail.com>",
@@ -33,7 +33,8 @@
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
       "yarn lint --fix",
-      "yarn format"
+      "yarn format",
+      "git add"
     ]
   },
   "dependencies": {
