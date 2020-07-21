@@ -1,5 +1,7 @@
 ---
 title: 自定义扩展
+metaTitle: 自定义扩展 - Ohbug Docs
+metaDescription: Ohbug 自定义扩展。
 ---
 
 # 自定义扩展

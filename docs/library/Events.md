@@ -1,5 +1,7 @@
 ---
 title: Events
+metaTitle: Events - Ohbug Docs
+metaDescription: 我们将每一条将要上报的数据称为 Event (事件)，大部分情况下 Ohbug 将为你管理 Event 的创建、修改以及特殊数据的设置。
 ---
 
 # Events

@@ -1,5 +1,7 @@
 ---
 title: 扩展
+metaTitle: 扩展 - Ohbug Docs
+metaDescription: 扩展系统是 Ohbug 的核心系统之一，通过扩展你可以修改上报内容、自定义捕获数据等。
 ---
 
 # 扩展

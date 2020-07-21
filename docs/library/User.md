@@ -1,5 +1,7 @@
 ---
 title: User
+metaTitle: User - Ohbug Docs
+metaDescription: 有时我们希望为每位用户建立精准的用户画像用以区分，user 这个设定或许可以在一定程度上帮助你实现。
 ---
 
 # User

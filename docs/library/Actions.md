@@ -1,5 +1,7 @@
 ---
 title: Actions
+metaTitle: Actions - Ohbug Docs
+metaDescription: 为了记录可能对 Event 产生有关的操作，我们将与 Event 相关的一些操作记录下来，称之为 Action。
 ---
 
 # Actions

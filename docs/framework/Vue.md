@@ -1,5 +1,7 @@
 ---
 title: Vue 集成指南
+metaTitle: Vue 集成指南 - Ohbug Docs
+metaDescription: ohbug-vue 是对 ohbug-browser 的扩展，利用 `Vue.config.errorHandler` 捕获到 Vue 相关的异常信息。
 ---
 
 # Vue 集成指南

@@ -1,5 +1,7 @@
 ---
 title: React 集成指南
+metaTitle: React 集成指南 - Ohbug Docs
+metaDescription: ohbug-react 是对 ohbug-browser 的扩展，利用 componentDidCatch 捕获到 React 相关的异常信息。
 ---
 
 # React 集成指南

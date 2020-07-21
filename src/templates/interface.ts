@@ -36,7 +36,7 @@ export interface Mdx {
     title: string;
     metaTitle: string;
     metaDescription: string;
-    sectionName: string;
+    sectionName?: string;
   };
   body: string;
   tableOfContents: {

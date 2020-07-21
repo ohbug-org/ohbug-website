@@ -1,5 +1,7 @@
 ---
 title: 基本配置
+metaTitle: 基本配置 - Ohbug Docs
+metaDescription: Ohbug 基本配置。通常一段最简单的配置即可满足多数需求。
 ---
 
 # 基本配置

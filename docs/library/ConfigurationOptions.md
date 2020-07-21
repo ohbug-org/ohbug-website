@@ -1,5 +1,7 @@
 ---
 title: 配置选项
+metaTitle: 配置选项 - Ohbug Docs
+metaDescription: Ohbug SDK 配置选项。
 ---
 
 # 配置选项

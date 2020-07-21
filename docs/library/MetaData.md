@@ -1,5 +1,7 @@
 ---
 title: MetaData
+metaTitle: MetaData - Ohbug Docs
+metaDescription: MetaData 的存在使得 Ohbug 存在着无限的可能，你可以设置任何需求的数据，Ohbug 会把它们同 Event 一起上报。。
 ---
 
 # MetaData
