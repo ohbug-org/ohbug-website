@@ -14,6 +14,7 @@
 - [User](/docs/library/User)
 - [MetaData](/docs/library/MetaData)
 - [自定义扩展](/docs/library/CustomExtension)
+- [SourceMap](/docs/library/SourceMap)
 
 ## 框架集成
 

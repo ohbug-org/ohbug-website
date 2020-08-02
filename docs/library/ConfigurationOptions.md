@@ -54,14 +54,12 @@ Ohbug.init({ releaseState: process.env.NODE_ENV })
 
 ### endpoint
 
-TODO 确认下最终的url
+选填项。默认值：`https://api.ohbug.net/report`
 
-选填项。默认值：`https://ohbug.net/report`
-
-默认情况下 Ohbug 将所有的 `Event` 上报至 `https://ohbug.net/report`，当然这个 url 可以通过 `endpoint` 修改。
+默认情况下 Ohbug 将所有的 `Event` 上报至 `https://api.ohbug.net/report`，当然这个 url 可以通过 `endpoint` 修改。
 
 ```javascript
-Ohbug.init({ endpoint: 'https://ohbug.net/report' })
+Ohbug.init({ endpoint: 'https://api.ohbug.net/report' })
 ```
 
 ### maxActions
@@ -110,10 +108,6 @@ Ohbug.init({
 ```
 
 > 请谨慎使用 `created` 回调，在 Ohbug 的扩展系统设计中，当前扩展 `created` 所返回的内容将传递给下一个插件。
-
-TODO 完善自定义上报内容的链接
-
-> 有关更多修改 `Event` 的示例，请参考[自定义上报内容]()。
 
 ### notified (hooks)
 

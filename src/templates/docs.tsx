@@ -21,7 +21,7 @@ const Docs: React.FC<PageProps<Data>> = (props) => {
   const { mdx } = data;
   const metaTitle = mdx?.frontmatter?.metaTitle;
   const metaDescription = mdx?.frontmatter?.metaDescription;
-  console.log(metaTitle, metaDescription);
+
   return (
     <Layout className={styles.root}>
       <SEO title={metaTitle} description={metaDescription} />
