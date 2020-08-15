@@ -40,27 +40,30 @@ const Home: React.FC = () => {
             </Button>
           </div>
           <div className={styles.figure}>
-            {/*<img*/}
-            {/*  className={styles.animate}*/}
-            {/*  src={require('./images/firstScreenFigure.png')}*/}
-            {/*  alt="figure"*/}
-            {/*/>*/}
-            <img src={require('./images/firstScreenFigure.png')} alt="figure" />
+            <img
+              className={styles.animate}
+              src={require('./images/firstScreenFigure2.png')}
+              alt="figure"
+            />
+            <img
+              src={require('./images/firstScreenFigure1.png')}
+              alt="figure"
+            />
           </div>
         </div>
 
-        {/*<svg className={styles.bg} viewBox="0 0 100 20">*/}
-        {/*  <defs>*/}
-        {/*    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">*/}
-        {/*      <stop stopColor="#fafafa" offset="0%" />*/}
-        {/*      <stop stopColor="white" offset="100%" />*/}
-        {/*    </linearGradient>*/}
-        {/*  </defs>*/}
-        {/*  <path*/}
-        {/*    d="M -10 10 q 60 -20 120 0 L 100 20 L 0 20"*/}
-        {/*    fill="url(#gradient)"*/}
-        {/*  />*/}
-        {/*</svg>*/}
+        <svg className={styles.bg} viewBox="0 0 100 20">
+          <defs>
+            <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+              <stop stopColor="#fafafa" offset="0%" />
+              <stop stopColor="white" offset="100%" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M -10 10 q 60 -20 120 0 L 100 20 L 0 20"
+            fill="url(#gradient)"
+          />
+        </svg>
       </section>
 
       <section className={styles.features}>
