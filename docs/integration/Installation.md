@@ -14,3 +14,20 @@ npm install @ohbug/browser --save
 # or
 yarn add @ohbug/browser
 ```
+
+## Script
+
+使用 Script 方式接入时需要注意将 Ohbug 脚本放在其他脚本之前，推荐放在 `head` 标签头部。
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@ohbug/browser@1.0.6-alpha.0/dist/ohbug-browser.global.prod.min.js"></script>
+<script>
+  var client = Ohbug.Client.init({
+    apiKey: 'YOUR_API_KEY'
+  })
+</script>
+```
+
+> Ohbug 使用第三方CDN服务加速脚本，您可以在这获取到[最新版本](https://www.jsdelivr.com/package/npm/@ohbug/browser)
+>
+> 如果考虑服务的稳定，也可自行下载使用自己的CDN加速服务。
