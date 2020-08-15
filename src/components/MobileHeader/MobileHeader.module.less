@@ -1,0 +1,113 @@
+@import '~@/styles/theme.less';
+
+.root {
+  display: none;
+  padding: @space-2 @space-3;
+  position: sticky;
+  top: 0;
+  height: 5rem;
+  font-weight: 600;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  @supports (backdrop-filter: blur(12px)) {
+    backdrop-filter: blur(12px);
+  }
+  @supports not (backdrop-filter: blur(12px)) {
+    background: @white;
+  }
+
+  .logo {
+    max-width: 6.7rem;
+    margin-right: 4rem;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    .top, .bottom  {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      left: 0;
+      border-radius: 1px;
+      background: @highlight-color;
+      transition: @transition;
+    }
+    .top {
+      top: 8px;
+    }
+    .bottom {
+      bottom: 8px;
+    }
+
+    &:hover {
+      .top, .bottom {
+        background: @primary-color;
+      }
+    }
+
+    &.toggleChecked {
+      .top {
+        transform: translateY(5px) rotate(45deg);
+      }
+      .bottom {
+        transform: translateY(-5px) rotate(-45deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.content {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100vw;
+  height: 0;
+  padding: @space-2 @space-3;
+  transition: all .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  overflow-x: hidden;
+  overflow-y: auto;
+  @supports (backdrop-filter: blur(12px)) {
+    backdrop-filter: blur(12px);
+  }
+  @supports not (backdrop-filter: blur(12px)) {
+    background: @white;
+  }
+
+  .btn {
+    text-align: right;
+  }
+  .nav {
+    a {
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: @highlight-color;
+      transition: @transition;
+      &:hover {
+        color: @primary-color;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid @secondary-color;
+      }
+    }
+  }
+
+  &.checked {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    top: 5rem;
+    height: calc(100vh - 5rem);
+  }
+}

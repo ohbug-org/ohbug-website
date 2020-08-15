@@ -10,8 +10,13 @@
 
 .root {
   position: relative;
-  box-shadow: @box-shadow-2;
   font-family: 'JetBrains Mono';
+
+  :global {
+    .hljs {
+      box-shadow: @box-shadow-2;
+    }
+  }
 
   .language {
     position: absolute;

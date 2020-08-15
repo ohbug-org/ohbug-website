@@ -15,7 +15,9 @@ const Side: React.FC<SideProps> = ({ data }) => {
     <aside className={styles.root}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <Link to="/docs">LOGO</Link>
+          <Link to="/docs">
+            <img src="/logos/logo-with-docs.svg" alt="logo" />
+          </Link>
         </div>
         <Search />
 

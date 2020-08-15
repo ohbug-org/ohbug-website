@@ -1,0 +1,83 @@
+@import '~@/styles/theme.less';
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1.625px;
+  border-radius: @radius;
+  transition: @transition;
+
+  &.typePrimary {
+    color: @white;
+    background-color: @highlight-color;
+    &:hover {
+      text-decoration: none;
+      background-color: @primary-color;
+    }
+  }
+  &.typeText {
+    color: @text-color;
+    background: none;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+      background-color: fade(@primary-color, 5%);
+      color: @highlight-color;
+    }
+  }
+  &.typeLink {
+    color: @text-color;
+    font-weight: 500;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  &.sizeSmall {
+    line-height: 1;
+    font-size: 0.875em;
+    min-width: 2rem;
+    min-height: 16px;
+    padding: 0.4em 1em;
+    &.shapeCircle {
+      width: 2rem;
+      height: 2rem;
+      padding: 0.5em;
+    }
+  }
+  &.sizeDefault {
+    line-height: 1;
+    font-size: 0.875em;
+    min-width: 2.6rem;
+    min-height: 1.5rem;
+    padding: 0.8em 1.2em;
+    &.shapeCircle {
+      width: 2.6rem;
+      height: 2.6rem;
+      padding: 0.8em;
+    }
+  }
+  &.sizeLarge {
+    line-height: 1;
+    font-size: 1em;
+    min-width: 4rem;
+    min-height: 2rem;
+    padding: 0.8em 1.6em;
+    &.shapeCircle {
+      width: 4rem;
+      height: 4rem;
+      padding: 1em;
+    }
+  }
+
+  &.shapeCircle {
+    border-radius: 50%;
+  }
+  &.shapeRound {
+    border-radius: 2rem;
+  }
+}

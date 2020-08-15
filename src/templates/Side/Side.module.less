@@ -23,14 +23,14 @@
       align-items: center;
       .flex();
       & > a {
-        flex: 1;
+        display: block;
+        width: 60%;
         color: @text-color-inverse;
       }
     }
 
     .nav {
       flex: 1;
-      width: @width;
       margin-top: @space-2;
       overflow-y: auto;
       overflow-x: hidden;
@@ -62,5 +62,14 @@
         }
       }
     }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .wrapper {
+      padding-left: @space;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

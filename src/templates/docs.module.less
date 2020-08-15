@@ -1,8 +1,14 @@
 @import '~@/styles/theme.less';
 
 .root {
-  background-color: @primary-color;
+  background-color: @highlight-color;
   min-height: 100vh;
+
+  .mobileHeader {
+    ul, li {
+      list-style: none;
+    }
+  }
 
   .wrapper {
     max-width: @page-width;
@@ -17,6 +23,7 @@
       padding: 0 @space-3 * 2 @logo-height;
       background-color: @white;
       box-shadow: @box-shadow-3;
+      overflow: hidden;
 
       .head {
         height: @logo-height;
@@ -26,13 +33,8 @@
         .flex-between();
 
         .button {
-          background: @white;
-          border: 1px solid @primary-color;
-          color: @primary-color;
-          border-radius: @radius;
-          text-decoration: none;
-          padding: 6px 16px;
-          cursor: pointer;
+          border: 1px solid fade(@primary-color, 12%);
+          color: @highlight-color;
         }
 
         .extra {
@@ -46,6 +48,17 @@
 
       .edit {
         margin-top: @space;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    background-color: @white;
+    .wrapper {
+      min-height: calc(100vh - 80px);
+      width: 100vw;
+      .container {
+        padding: 0 @space-3 @space-2;
       }
     }
   }

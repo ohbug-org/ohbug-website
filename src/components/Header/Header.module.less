@@ -1,13 +1,43 @@
 @import '~@/styles/theme.less';
 
 .root {
-  padding: @space-2 @space-3;
-  position: absolute;
+  padding: @space @space-3;
+  position: sticky;
   top: 0;
-  left: 50%;
-  margin-left: -@page-width/2;
-  width: @page-width;
-  height: 80px;
+  height: 5rem;
   font-weight: 600;
-  .flex-between();
+  z-index: 999;
+  .flex-center();
+  @supports (backdrop-filter: blur(12px)) {
+    backdrop-filter: blur(12px);
+  }
+  @supports not (backdrop-filter: blur(12px)) {
+    background: @white;
+  }
+
+  .container {
+    flex: 1;
+    max-width: @page-width;
+    margin: 0 auto;
+    .flex-between();
+
+    .logo {
+      max-width: 6rem;
+      margin-right: 4rem;
+    }
+
+    .nav {
+      flex: 1;
+      .flex-between();
+      & > nav > * {
+        &:not(:last-child) {
+          margin-right: @space-2;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

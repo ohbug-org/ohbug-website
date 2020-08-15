@@ -1,15 +1,16 @@
 import React from 'react';
 import type { PageProps } from 'gatsby';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 
-import { Layout, SEO } from '@/components';
+import { Layout, SEO, Button, MobileHeader } from '@/components';
 import type { Data } from '@/templates/interface';
 import Side from '@/templates/Side';
 import TypographyComponents from '@/templates/Typography';
 import Nav from '@/templates/Nav';
 import { getGithubUrl } from '@/utils';
+import { generateSide } from '@/templates/Side/utils';
 
 import styles from './docs.module.less';
 
@@ -26,15 +27,22 @@ const Docs: React.FC<PageProps<Data>> = (props) => {
     <Layout className={styles.root}>
       <SEO title={metaTitle} description={metaDescription} />
 
+      <MobileHeader
+        contentClassName={styles.mobileHeader}
+        logo={<img src="/logos/logo-with-docs.svg" alt="logo" />}
+      >
+        {data && generateSide(data)}
+      </MobileHeader>
+
       <div className={styles.wrapper}>
         <Side data={data} />
 
         <section className={styles.container}>
           <header className={styles.head}>
             <div className={styles.links}>
-              <Link className={styles.button} to="/">
+              <Button className={styles.button} as="a" href="/" type="text">
                 ohbug.net
-              </Link>
+              </Button>
             </div>
             <div className={styles.extra}></div>
           </header>
