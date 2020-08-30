@@ -16,7 +16,7 @@ import { createExtension } from '@ohbug/core'
 export const extension = createExtension({
   name: 'ExtensionName',
   init: () => {
-    // do something
+    // 这里初始化数据收集的程序
   }
 })
 ```

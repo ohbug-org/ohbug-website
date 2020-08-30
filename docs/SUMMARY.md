@@ -20,3 +20,9 @@
 
 - [React](/docs/framework/React)
 - [Vue](/docs/framework/Vue)
+
+## 控制台 / Dashboard
+
+- [团队项目](/docs/dashboard/OrganizationProject)
+- [项目设置](/docs/dashboard/SettingProject)
+- [成员设置](/docs/dashboard/SettingMembers)
