@@ -22,7 +22,7 @@ const Story: React.FC = () => (
 
         <div className={styles.description}>
           Ohbug
-          是应用信息监控平台。提供开源的异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
+          是开源的应用信息监控平台。提供异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
         </div>
 
         <Button
@@ -31,7 +31,7 @@ const Story: React.FC = () => (
           href="//app.ohbug.net"
           size="large"
         >
-          现在试试
+          白嫖一波
         </Button>
         <Button as="a" href="/docs" size="large" type="text">
           Docs

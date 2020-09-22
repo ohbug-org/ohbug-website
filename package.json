@@ -1,7 +1,7 @@
 {
   "name": "ohbug-website",
   "description": "Ohbug's website and documentation.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "author": "chenyueban <jasonchan0527@gmail.com>",
   "license": "MIT",

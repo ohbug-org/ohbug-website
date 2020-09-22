@@ -40,7 +40,7 @@ const Header: React.FC = () => {
 
             <div>
               <Button as="a" href="//app.ohbug.net">
-                现在试试
+                白嫖一波
               </Button>
             </div>
           </div>
