@@ -20,6 +20,7 @@
 
 - [React](/docs/framework/React)
 - [Vue](/docs/framework/Vue)
+- [Angular](/docs/framework/Angular)
 - [小程序](/docs/framework/MiniApp)
 
 ## 控制台 / Dashboard
