@@ -1,16 +1,16 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { useLocation } from '@reach/router';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useLocation } from '@reach/router'
+import { useStaticQuery, graphql } from 'gatsby'
 
 interface SEOProps {
-  title?: string;
-  description?: string;
-  banner?: string;
+  title?: string
+  description?: string
+  banner?: string
 }
 const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
-  const { pathname } = useLocation();
-  const { site } = useStaticQuery(query);
+  const { pathname } = useLocation()
+  const { site } = useStaticQuery(query)
 
   const {
     siteMetadata: {
@@ -22,14 +22,14 @@ const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
       siteLanguage,
       author,
     },
-  } = site;
+  } = site
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${banner || defaultBanner}`,
     url: `${siteUrl}${pathname || ''}`,
-  };
+  }
 
   const schemaOrgWebPage = {
     '@context': 'http://schema.org',
@@ -61,7 +61,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
       '@type': 'ImageObject',
       url: `${siteUrl}${defaultBanner}`,
     },
-  };
+  }
 
   const itemListElement = [
     {
@@ -72,7 +72,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
       },
       position: 1,
     },
-  ];
+  ]
 
   const breadcrumb = {
     '@context': 'http://schema.org',
@@ -80,7 +80,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
     description: 'Breadcrumbs list',
     name: 'Breadcrumbs',
     itemListElement,
-  };
+  }
 
   return (
     <Helmet title={seo.title}>
@@ -102,10 +102,10 @@ const SEO: React.FC<SEOProps> = ({ title, description, banner }) => {
       </script>
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
     </Helmet>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO
 
 const query = graphql`
   query SEO {
@@ -122,4 +122,4 @@ const query = graphql`
       }
     }
   }
-`;
+`

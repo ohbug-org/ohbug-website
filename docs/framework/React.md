@@ -49,7 +49,6 @@ interface ErrorBoundaryProp {
 
 ### FallbackComponent
 
-默认情况下，*error boundary* 将尝试重新渲染 *child tree*，可能导致白屏。
+默认情况下，_error boundary_ 将尝试重新渲染 _child tree_，可能导致白屏。
 
 如果指定 `FallbackComponent`，则发生错误时 Ohbug 会呈现此错误，以显示友好的错误页面，提升用户体验。
-

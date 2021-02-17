@@ -9,10 +9,13 @@ metaDescription: 扩展系统是 Ohbug 的核心系统之一，通过扩展你�
 扩展系统是 Ohbug 的核心系统之一，通过扩展你可以修改上报内容、自定义捕获数据等。
 
 ## 使用扩展
+
 这里用 `@ohbug/extension-uuid` 举例，这个扩展可以帮你在每一条 `Event` 上设置 `UUID`。
+
 ```shell
 yarn add @ohbug/extension-uuid
 ```
+
 ```javascript
 import Ohbug from '@ohbug/browser'
 import OhbugExtensionUUID from '@ohbug/extension-uuid'

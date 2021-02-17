@@ -20,7 +20,6 @@
 }
 
 .root {
-
   overflow: hidden;
 
   .story {
@@ -85,7 +84,7 @@
           }
         }
         .figure {
-          display: none
+          display: none;
         }
       }
       @media screen and (max-width: 992px) {
@@ -141,7 +140,8 @@
       .img {
         border-radius: @radius-2;
         overflow: hidden;
-        box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
       }
     }
 
@@ -169,7 +169,7 @@
     height: 26rem;
     border-radius: 8px;
     flex-direction: column;
-    background: url("./images/getStartedFigure.svg") no-repeat left top, #fbfbfb;
+    background: url('./images/getStartedFigure.svg') no-repeat left top, #fbfbfb;
     background-size: 100%;
     .flex-center();
     .title {

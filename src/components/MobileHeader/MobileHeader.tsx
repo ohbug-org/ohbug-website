@@ -1,20 +1,20 @@
-import React from 'react';
-import clsx from 'clsx';
-import { Link } from 'gatsby';
+import React from 'react'
+import clsx from 'clsx'
+import { Link } from 'gatsby'
 
-import styles from './MobileHeader.module.less';
+import styles from './MobileHeader.module.less'
 
 interface NavItem {
-  label: string;
-  href: string;
+  label: string
+  href: string
 }
 interface MobileHeaderProps {
-  dataSource?: NavItem[];
-  children?: React.ReactNode;
-  logo?: React.ReactNode;
-  extra?: React.ReactNode;
-  contentClassName?: string;
-  [prop: string]: any;
+  dataSource?: NavItem[]
+  children?: React.ReactNode
+  logo?: React.ReactNode
+  extra?: React.ReactNode
+  contentClassName?: string
+  [prop: string]: any
 }
 
 const MobileHeader: React.FC<MobileHeaderProps> = ({
@@ -26,10 +26,10 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
   className,
   ...args
 }) => {
-  const [toggleChecked, setToggleChecked] = React.useState(false);
+  const [toggleChecked, setToggleChecked] = React.useState(false)
   const handleToggleClick = React.useCallback(() => {
-    setToggleChecked(!toggleChecked);
-  }, [toggleChecked]);
+    setToggleChecked(!toggleChecked)
+  }, [toggleChecked])
 
   return (
     <>
@@ -66,7 +66,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default MobileHeader;
+export default MobileHeader

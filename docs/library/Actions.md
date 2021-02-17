@@ -8,13 +8,13 @@ metaDescription: 为了记录可能对 Event 产生有关的操作，我们将�
 
 为了记录可能对 `Event` 产生有关的操作，我们将与 `Event` 相关的一些操作记录下来，称之为 `Action`。
 
-默认情况下，每条 `Event` 会自动包含最近发生的30个 `Action`。
+默认情况下，每条 `Event` 会自动包含最近发生的 30 个 `Action`。
 
 将包含以下类型：
 
-***Browser***
+**_Browser_**
 
--  click
+- click
 - navigation
 - console
 - ajax
@@ -25,12 +25,22 @@ metaDescription: 为了记录可能对 Event 产生有关的操作，我们将�
 ```typescript
 interface OhbugClient {
   // ...
-  addAction: (message: string, data: Record<string, any>, type: string, timestamp?: string) => void
+  addAction: (
+    message: string,
+    data: Record<string, any>,
+    type: string,
+    timestamp?: string
+  ) => void
 }
 
 interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
   // ...
-  addAction: (message: string, data: Record<string, any>, type: string, timestamp?: string) => void
+  addAction: (
+    message: string,
+    data: Record<string, any>,
+    type: string,
+    timestamp?: string
+  ) => void
 }
 ```
 

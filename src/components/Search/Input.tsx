@@ -1,15 +1,15 @@
-import React from 'react';
-import { connectSearchBox } from 'react-instantsearch-dom';
+import React from 'react'
+import { connectSearchBox } from 'react-instantsearch-dom'
 
-import styles from './Search.module.less';
+import styles from './Search.module.less'
 
 const preventSubmit = (e) => {
-  e.preventDefault();
-};
+  e.preventDefault()
+}
 export default connectSearchBox(({ refine, innerRef, onFocus }) => {
   const handleChange = React.useCallback((e) => {
-    refine?.(e?.target?.value);
-  }, []);
+    refine?.(e?.target?.value)
+  }, [])
   return (
     <form onSubmit={preventSubmit}>
       <input
@@ -21,5 +21,5 @@ export default connectSearchBox(({ refine, innerRef, onFocus }) => {
         onFocus={onFocus}
       />
     </form>
-  );
-});
+  )
+})

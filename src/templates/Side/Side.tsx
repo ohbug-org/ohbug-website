@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
-import type { Data } from '@/templates/interface';
-import { generateSide } from '@/templates/Side/utils';
-import { Search } from '@/components';
+import type { Data } from '@/templates/interface'
+import { generateSide } from '@/templates/Side/utils'
+import { Search } from '@/components'
 
-import styles from './Side.module.less';
+import styles from './Side.module.less'
 
 interface SideProps {
-  data: Data;
+  data: Data
 }
 const Side: React.FC<SideProps> = ({ data }) => {
   return (
@@ -24,7 +24,7 @@ const Side: React.FC<SideProps> = ({ data }) => {
         <nav className={styles.nav}>{data && generateSide(data)}</nav>
       </div>
     </aside>
-  );
-};
+  )
+}
 
-export default Side;
+export default Side

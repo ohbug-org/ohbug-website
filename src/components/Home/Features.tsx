@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import styles from './Home.module.less';
+import styles from './Home.module.less'
 
 type DataSource = {
-  key: string;
+  key: string
   img: {
-    src: string;
-    alt: string;
-    props?: any;
-  };
+    src: string
+    alt: string
+    props?: any
+  }
   information: {
-    title: string;
-    description: string;
-  };
-}[];
+    title: string
+    description: string
+  }
+}[]
 const dataSource: DataSource = [
   {
     key: 'extensions',
@@ -67,12 +67,10 @@ const dataSource: DataSource = [
     },
     information: {
       title: `实时报警通知`,
-      description: `通过邮件通知、浏览器推送、Webhook 等方式实现即时通知。
-          <br />
-          支持钉钉机器人、企业微信等通知方式。`,
+      description: `通过邮件通知、浏览器推送、Webhook 等方式实现即时通知。支持钉钉机器人、企业微信等通知方式。`,
     },
   },
-];
+]
 
 const Features: React.FC = () => (
   <>
@@ -91,6 +89,6 @@ const Features: React.FC = () => (
       </section>
     ))}
   </>
-);
+)
 
-export default Features;
+export default Features

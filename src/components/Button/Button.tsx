@@ -1,15 +1,15 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from 'react'
+import clsx from 'clsx'
 
-import styles from './Button.module.less';
+import styles from './Button.module.less'
 
 interface ButtonProps {
-  children?: React.ReactNode;
-  as?: string;
-  type?: 'primary' | 'text' | 'link';
-  size?: 'small' | 'default' | 'large';
-  shape?: 'circle' | 'round';
-  [prop: string]: any;
+  children?: React.ReactNode
+  as?: string
+  type?: 'primary' | 'text' | 'link'
+  size?: 'small' | 'default' | 'large'
+  shape?: 'circle' | 'round'
+  [prop: string]: any
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -30,14 +30,13 @@ const Button: React.FC<ButtonProps> = ({
     [styles.sizeLarge]: size === 'large',
     [styles.shapeCircle]: shape === 'circle',
     [styles.shapeRound]: shape === 'round',
-  });
+  })
   return (
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     <Component className={classes} {...args}>
       {children}
     </Component>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

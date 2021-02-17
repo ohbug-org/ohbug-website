@@ -1,8 +1,8 @@
-import React from 'react';
-import { Highlight, Snippet } from 'react-instantsearch-dom';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Highlight, Snippet } from 'react-instantsearch-dom'
+import { Link } from 'gatsby'
 
-import styles from './Search.module.less';
+import styles from './Search.module.less'
 
 const Hit: React.FC = ({ hit }: any) => {
   return (
@@ -14,7 +14,7 @@ const Hit: React.FC = ({ hit }: any) => {
         <Snippet attribute="excerpt" hit={hit} tagName="mark" />
       </div>
     </Link>
-  );
-};
+  )
+}
 
-export default Hit;
+export default Hit

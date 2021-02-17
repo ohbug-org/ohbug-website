@@ -22,4 +22,4 @@ module.exports = {
     algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
     algoliaAdminKey: process.env.GATSBY_ALGOLIA_ADMIN_KEY,
   },
-};
+}

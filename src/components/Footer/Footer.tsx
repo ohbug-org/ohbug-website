@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import { Button } from '@/components';
+import { Button } from '@/components'
 
-import styles from './Footer.module.less';
+import styles from './Footer.module.less'
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </div>
           <div className={styles.description}>
             Ohbug
-            是开源的应用信息监控平台。提供异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
+            是开源的应用信息监控套件。提供异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
           <Button
             as="a"
-            href="https://github.com/ohbug-org/ohbug-server"
+            href="/docs/deploy/Deploy"
             target="_blank"
             shape="circle"
             type="text"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
       <div className={styles.copyright}>Copyright © Ohbug, Inc.</div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

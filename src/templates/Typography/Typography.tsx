@@ -1,12 +1,12 @@
 /* eslint-disable react/display-name,@typescript-eslint/explicit-module-boundary-types */
 
-import React from 'react';
+import React from 'react'
 
-import { toLine } from '@/utils';
+import { toLine } from '@/utils'
 
-import Code from './Code';
+import Code from './Code'
 
-import styles from './Typography.module.less';
+import styles from './Typography.module.less'
 
 export default {
   h1: ({ children, ...props }): React.ReactElement => (
@@ -51,4 +51,4 @@ export default {
     <code className={styles.code} {...props} />
   ),
   a: (props): React.ReactElement => <a className={styles.a} {...props} />,
-};
+}

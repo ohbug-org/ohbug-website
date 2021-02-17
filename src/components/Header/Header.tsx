@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { Button, MobileHeader } from '@/components';
+import { Button, MobileHeader } from '@/components'
 
-import styles from './Header.module.less';
+import styles from './Header.module.less'
 
 const dataSource = [
   {
@@ -18,7 +18,7 @@ const dataSource = [
     label: 'Github',
     href: 'https://github.com/ohbug-org/ohbug',
   },
-];
+]
 
 const Header: React.FC = () => {
   return (
@@ -39,8 +39,8 @@ const Header: React.FC = () => {
             </nav>
 
             <div>
-              <Button as="a" href="//app.ohbug.net">
-                白嫖一波
+              <Button as="a" href="/docs/deploy/Deploy">
+                免费部署
               </Button>
             </div>
           </div>
@@ -51,13 +51,13 @@ const Header: React.FC = () => {
         dataSource={dataSource}
         logo={<img src="/logos/logo-with-text.svg" alt="logo" />}
         extra={
-          <Button as="a" href="//app.ohbug.net">
-            现在试试
+          <Button as="a" href="/docs/deploy/Deploy">
+            免费部署
           </Button>
         }
       />
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

@@ -13,7 +13,13 @@ metaDescription: 我们将每一条将要上报的数据称为 Event (事件)，
 ### 创建 Event
 
 ```typescript
-type OhbugCategory = 'error' | 'message' | 'feedback' | 'view' | 'performance' | 'other'
+type OhbugCategory =
+  | 'error'
+  | 'message'
+  | 'feedback'
+  | 'view'
+  | 'performance'
+  | 'other'
 interface OhbugCreateEvent<D> {
   category?: OhbugCategory
   type: string
@@ -22,7 +28,9 @@ interface OhbugCreateEvent<D> {
 
 interface OhbugClient {
   // ...
-  createEvent: <D = any>(value: OhbugCreateEvent<D>) => OhbugEventWithMethods<D> | false
+  createEvent: <D = any>(
+    value: OhbugCreateEvent<D>
+  ) => OhbugEventWithMethods<D> | false
 }
 ```
 
@@ -36,7 +44,7 @@ const client = Ohbug.init({ apiKey: 'YOUR_API_KEY' })
 const event = client.createEvent({
   category: 'error',
   type: 'unknown',
-  detail: 'xxx'
+  detail: 'xxx',
 })
 ```
 
@@ -55,7 +63,9 @@ interface OhbugClient {
   // ...
   notify: <D = any>(
     eventLike: any,
-    beforeNotify?: (event: OhbugEventWithMethods<D> | false) => OhbugEventWithMethods<D> | false
+    beforeNotify?: (
+      event: OhbugEventWithMethods<D> | false
+    ) => OhbugEventWithMethods<D> | false
   ) => Promise<any | null>
 }
 ```
@@ -107,7 +117,13 @@ interface OhbugEvent<D> {
 `Event` 所属的大类。
 
 ```typescript
-type OhbugCategory = 'error' | 'message' | 'feedback' | 'view' | 'performance' | 'other'
+type OhbugCategory =
+  | 'error'
+  | 'message'
+  | 'feedback'
+  | 'view'
+  | 'performance'
+  | 'other'
 ```
 
 #### type
@@ -127,7 +143,6 @@ export const UNKNOWN_ERROR = 'unknownError' // 未知错误
 export const MESSAGE = 'message' // 主动上报的信息
 // view
 export const VIEW = 'view' // 用于计算 PV/UV
-
 ```
 
 #### detail
@@ -167,7 +182,12 @@ interface OhbugDevice {
 
 ```typescript
 interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
-  addAction: (message: string, data: Record<string, any>, type: string, timestamp?: string) => void
+  addAction: (
+    message: string,
+    data: Record<string, any>,
+    type: string,
+    timestamp?: string
+  ) => void
   getUser: () => OhbugUser | undefined
   setUser: (user: OhbugUser) => OhbugUser | undefined
   addMetaData: (section: string, data: any) => any

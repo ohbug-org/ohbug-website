@@ -28,6 +28,3 @@ import OhbugVue from '@ohbug/vue'
 const client = Ohbug.init({ apiKey: 'YOUR_API_KEY' })
 client.use(OhbugVue, Vue)
 ```
-
-
-

@@ -30,8 +30,8 @@ Ohbug.init({
   user: {
     id: '1',
     name: 'Ohbug',
-    email: 'test@ohbug.net'
-  }
+    email: 'test@ohbug.net',
+  },
 })
 ```
 
@@ -43,7 +43,7 @@ const client = Ohbug.init({ apiKey: 'YOUR_API_KEY' })
 client.setUser({
   id: '1',
   name: 'Ohbug',
-  email: 'test@ohbug.net'
+  email: 'test@ohbug.net',
 })
 ```
 
@@ -55,9 +55,9 @@ Ohbug.init({
     event.setUser({
       id: '1',
       name: 'Ohbug',
-      email: 'test@ohbug.net'
+      email: 'test@ohbug.net',
     })
     return event
-  }
+  },
 })
 ```

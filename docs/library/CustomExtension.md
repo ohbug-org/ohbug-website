@@ -17,7 +17,7 @@ export const extension = createExtension({
   name: 'ExtensionName',
   init: () => {
     // 这里初始化数据收集的程序
-  }
+  },
 })
 ```
 
@@ -34,4 +34,3 @@ interface OhbugExtension<T = any> {
   notified?: (event: OhbugEventWithMethods<any>, client: OhbugClient) => void
 }
 ```
-

@@ -9,6 +9,7 @@ metaDescription: 安装使用 Ohbug SDK。
 推荐使用 npm 方式安装接入 Ohbug。
 
 ## NPM
+
 ```shell
 npm install @ohbug/browser --save
 # or
@@ -23,11 +24,11 @@ yarn add @ohbug/browser
 <script src="https://cdn.jsdelivr.net/npm/@ohbug/browser@1.0.6-alpha.0/dist/ohbug-browser.global.prod.min.js"></script>
 <script>
   var client = Ohbug.Client.init({
-    apiKey: 'YOUR_API_KEY'
+    apiKey: 'YOUR_API_KEY',
   })
 </script>
 ```
 
-> Ohbug 使用第三方CDN服务加速脚本，您可以在这获取到[最新版本](https://www.jsdelivr.com/package/npm/@ohbug/browser)
+> Ohbug 使用第三方 CDN 服务加速脚本，您可以在这获取到[最新版本](https://www.jsdelivr.com/package/npm/@ohbug/browser)
 >
-> 如果考虑服务的稳定，也可自行下载使用自己的CDN加速服务。
+> 如果考虑服务的稳定，也可自行下载使用自己的 CDN 加速服务。

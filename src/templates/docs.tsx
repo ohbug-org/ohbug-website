@@ -1,27 +1,27 @@
-import React from 'react';
-import type { PageProps } from 'gatsby';
-import { graphql } from 'gatsby';
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
-import { MDXProvider } from '@mdx-js/react';
+import React from 'react'
+import type { PageProps } from 'gatsby'
+import { graphql } from 'gatsby'
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
+import { MDXProvider } from '@mdx-js/react'
 
-import { Layout, SEO, Button, MobileHeader } from '@/components';
-import type { Data } from '@/templates/interface';
-import Side from '@/templates/Side';
-import TypographyComponents from '@/templates/Typography';
-import Nav from '@/templates/Nav';
-import { getGithubUrl } from '@/utils';
-import { generateSide } from '@/templates/Side/utils';
+import { Layout, SEO, Button, MobileHeader } from '@/components'
+import type { Data } from '@/templates/interface'
+import Side from '@/templates/Side'
+import TypographyComponents from '@/templates/Typography'
+import Nav from '@/templates/Nav'
+import { getGithubUrl } from '@/utils'
+import { generateSide } from '@/templates/Side/utils'
 
-import styles from './docs.module.less';
+import styles from './docs.module.less'
 
 const Docs: React.FC<PageProps<Data>> = (props) => {
-  const { data } = props;
+  const { data } = props
   if (!data) {
-    return null;
+    return null
   }
-  const { mdx } = data;
-  const metaTitle = mdx?.frontmatter?.metaTitle;
-  const metaDescription = mdx?.frontmatter?.metaDescription;
+  const { mdx } = data
+  const metaTitle = mdx?.frontmatter?.metaTitle
+  const metaDescription = mdx?.frontmatter?.metaDescription
 
   return (
     <Layout className={styles.root}>
@@ -80,10 +80,10 @@ const Docs: React.FC<PageProps<Data>> = (props) => {
         <Nav data={mdx} />
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Docs;
+export default Docs
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -132,4 +132,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

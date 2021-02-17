@@ -1,7 +1,7 @@
-require('dotenv').config();
-const baseConfig = require('./config');
-const queries = require('./src/utils/algolia');
-const pathPrefix = baseConfig.pathPrefix === '/' ? '' : baseConfig.pathPrefix;
+require('dotenv').config()
+const baseConfig = require('./config')
+const queries = require('./src/utils/algolia')
+const pathPrefix = baseConfig.pathPrefix === '/' ? '' : baseConfig.pathPrefix
 
 const plugins = [
   {
@@ -42,7 +42,7 @@ const plugins = [
       color: '#FF6F61',
     },
   },
-];
+]
 if (
   baseConfig.search &&
   baseConfig.search.enabled &&
@@ -59,7 +59,7 @@ if (
       enablePartialUpdates: true,
       matchFields: ['slug', 'modified'],
     },
-  });
+  })
 }
 
 module.exports = {
@@ -76,4 +76,4 @@ module.exports = {
     author: baseConfig.author,
   },
   plugins,
-};
+}

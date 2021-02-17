@@ -1,24 +1,24 @@
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+const path = require('path')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       plugins: [new TsconfigPathsPlugin()],
     },
-  });
-};
+  })
+}
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   if (node.internal.type === 'Mdx') {
-    const parent = getNode(node.parent);
+    const parent = getNode(node.parent)
 
-    let value = parent.relativePath.replace(parent.ext, '');
+    let value = parent.relativePath.replace(parent.ext, '')
 
     if (value === 'index') {
-      value = '';
+      value = ''
     }
 
     if (value === 'README') {
@@ -26,31 +26,31 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: 'slug',
         node,
         value: '/docs',
-      });
+      })
     } else {
       createNodeField({
         name: 'slug',
         node,
         value: `/docs/${value}`,
-      });
+      })
     }
 
     createNodeField({
       name: 'id',
       node,
       value: node.id,
-    });
+    })
 
     createNodeField({
       name: 'title',
       node,
       value: node.frontmatter.title,
-    });
+    })
   }
-};
+}
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -71,11 +71,11 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
+        `
       ).then((result) => {
         if (result.errors) {
-          console.log(result.errors); // eslint-disable-line no-console
-          reject(result.errors);
+          console.log(result.errors) // eslint-disable-line no-console
+          reject(result.errors)
         }
 
         result.data.allMdx.edges.forEach(({ node }) => {
@@ -85,9 +85,9 @@ exports.createPages = ({ graphql, actions }) => {
             context: {
               id: node.fields.id,
             },
-          });
-        });
-      }),
-    );
-  });
-};
+          })
+        })
+      })
+    )
+  })
+}

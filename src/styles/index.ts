@@ -1,2 +1,2 @@
-export * from './theme.less';
-module.exports = require('./theme.less');
+export * from './theme.less'
+module.exports = require('./theme.less')

@@ -46,7 +46,7 @@ Ohbug.init({ appType: 'client' })
 Ohbug.init({ releaseStage: 'production' })
 ```
 
-当然如果你使用了 *webpack*、*rollup* 等打包工具，可以直接使用环境变量 `NODE_ENV`。
+当然如果你使用了 _webpack_、_rollup_ 等打包工具，可以直接使用环境变量 `NODE_ENV`。
 
 ```javascript
 Ohbug.init({ releaseState: process.env.NODE_ENV })
@@ -87,7 +87,7 @@ Ohbug.init({
   created: (event, client) => {
     // do something
     return event
-  }
+  },
 })
 ```
 
@@ -103,7 +103,7 @@ Ohbug.init({
       return false
     }
     return event
-  }
+  },
 })
 ```
 
@@ -119,7 +119,7 @@ Ohbug.init({
 Ohbug.init({
   notified: (event, client) => {
     // do something
-  }
+  },
 })
 ```
 
@@ -149,9 +149,9 @@ export const logger = {
 }
 ```
 
-默认情况下 Ohbug 产生的日志消息带有 `Ohbug` 前缀。您可以自定义自己的 *logger*，或者设置 `logger: null` 来关闭日志输出。
+默认情况下 Ohbug 产生的日志消息带有 `Ohbug` 前缀。您可以自定义自己的 _logger_，或者设置 `logger: null` 来关闭日志输出。
 
-如果提供 *logger*，则它必须具有以下方法：`log`, `info`, `warn`, `error`。
+如果提供 _logger_，则它必须具有以下方法：`log`, `info`, `warn`, `error`。
 
 ```javascript
 // 关闭日志输出
@@ -162,7 +162,7 @@ const myLogger = {
   log: function () {},
   info: function () {},
   warn: function () {},
-  error: function () {}
+  error: function () {},
 }
 Ohbug.init({ logger: myLogger })
 ```
@@ -178,8 +178,8 @@ Ohbug.init({
   user: {
     id: '1',
     name: 'Ohbug',
-    email: 'test@ohbug.net'
-  }
+    email: 'test@ohbug.net',
+  },
 })
 ```
 
@@ -195,9 +195,9 @@ Ohbug.init({
 Ohbug.init({
   metadata: {
     dataType: {
-      name: 'test_name'
-    }
-  }
+      name: 'test_name',
+    },
+  },
 })
 ```
 

@@ -1,3 +1,7 @@
+## 部署
+
+- [Ohbug 部署](/docs/deploy/Deploy)
+
 ## JavaScript 集成指南
 
 - [安装](/docs/integration/Installation)

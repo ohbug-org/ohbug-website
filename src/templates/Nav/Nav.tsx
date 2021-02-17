@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
-import type { Mdx } from '@/templates/interface';
+import type { Mdx } from '@/templates/interface'
 
-import styles from './Nav.module.less';
+import styles from './Nav.module.less'
 
 function getLink(item: any, level: number) {
   return (
@@ -17,7 +17,7 @@ function getLink(item: any, level: number) {
     >
       {item.title}
     </Link>
-  );
+  )
 }
 function generateItem(items: Mdx['tableOfContents']['items'], level = 0) {
   return items.map((item) => {
@@ -27,19 +27,19 @@ function generateItem(items: Mdx['tableOfContents']['items'], level = 0) {
           {getLink(item, level)}
           {generateItem(item.items, level + 1)}
         </React.Fragment>
-      );
+      )
     }
     if (item.items) {
-      return generateItem(item.items, level + 1);
+      return generateItem(item.items, level + 1)
     }
     if (item.url && item.title) {
-      return getLink(item, level);
+      return getLink(item, level)
     }
-  });
+  })
 }
 
 interface NavProps {
-  data: Mdx;
+  data: Mdx
 }
 const Nav: React.FC<NavProps> = ({ data }) => (
   <div className={styles.root}>
@@ -50,6 +50,6 @@ const Nav: React.FC<NavProps> = ({ data }) => (
       </div>
     </div>
   </div>
-);
+)
 
-export default Nav;
+export default Nav

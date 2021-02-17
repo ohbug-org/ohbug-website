@@ -1,4 +1,4 @@
-const config = require('../../config');
+const config = require('../../config')
 
 const query = `{
   pages: allMdx {
@@ -18,7 +18,7 @@ const query = `{
       }
     }
   }
-}`;
+}`
 
 const queries = [
   {
@@ -31,6 +31,6 @@ const queries = [
     matchFields: ['slug', 'modified'],
     settings: { attributesToSnippet: [`excerpt:20`] },
   },
-];
+]
 
-module.exports = queries;
+module.exports = queries

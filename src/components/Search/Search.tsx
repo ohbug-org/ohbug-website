@@ -1,27 +1,27 @@
-import React from 'react';
-import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, Index, Hits } from 'react-instantsearch-dom';
-import { useClickAway } from 'ahooks';
+import React from 'react'
+import algoliasearch from 'algoliasearch/lite'
+import { InstantSearch, Index, Hits } from 'react-instantsearch-dom'
+import { useClickAway } from 'ahooks'
 
-import Input from './Input';
-import Results from './Results';
-import Hit from './Hit';
-import config from '../../../config.js';
+import Input from './Input'
+import Results from './Results'
+import Hit from './Hit'
+import config from '../../../config.js'
 
-import styles from './Search.module.less';
+import styles from './Search.module.less'
 
-const indices = [{ name: config.search.indexName, title: `docs` }];
+const indices = [{ name: config.search.indexName, title: `docs` }]
 
 const Search: React.FC = () => {
-  const [query, setQuery] = React.useState('');
-  const [focus, setFocus] = React.useState(false);
-  const inputRef = React.useRef<HTMLInputElement>();
-  useClickAway(() => setFocus(false), inputRef);
+  const [query, setQuery] = React.useState('')
+  const [focus, setFocus] = React.useState(false)
+  const inputRef = React.useRef<HTMLInputElement>()
+  useClickAway(() => setFocus(false), inputRef)
 
   const searchClient = algoliasearch(
     config.search.algoliaAppId,
-    config.search.algoliaSearchKey,
-  );
+    config.search.algoliaSearchKey
+  )
   return (
     <section className={styles.root}>
       <InstantSearch
@@ -54,7 +54,7 @@ const Search: React.FC = () => {
         </div>
       </InstantSearch>
     </section>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

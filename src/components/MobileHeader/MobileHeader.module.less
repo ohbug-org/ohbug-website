@@ -27,7 +27,8 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    .top, .bottom  {
+    .top,
+    .bottom {
       position: absolute;
       width: 30px;
       height: 4px;
@@ -44,7 +45,8 @@
     }
 
     &:hover {
-      .top, .bottom {
+      .top,
+      .bottom {
         background: @primary-color;
       }
     }
@@ -74,7 +76,7 @@
   width: 100vw;
   height: 0;
   padding: @space-2 @space-3;
-  transition: all .56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  transition: all 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
   overflow-x: hidden;
   overflow-y: auto;
   @supports (backdrop-filter: blur(12px)) {

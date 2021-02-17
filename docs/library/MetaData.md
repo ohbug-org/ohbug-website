@@ -33,9 +33,9 @@ import Ohbug from '@ohbug/browser'
 const client = Ohbug.init({
   metadata: {
     dataType: {
-      name: 'test_name'
-    }
-  }
+      name: 'test_name',
+    },
+  },
 })
 
 // 新增 Global MetaData
@@ -59,8 +59,8 @@ import Ohbug from '@ohbug/browser'
 Ohbug.init({
   metadata: {
     dataType: {
-      name: 'test_name'
-    }
+      name: 'test_name',
+    },
   },
   created: (event) => {
     if (condition) {
@@ -68,7 +68,6 @@ Ohbug.init({
       event.addMetaData('dataType2', { name: 'test_name2' })
     }
     return event
-  }
+  },
 })
 ```
-

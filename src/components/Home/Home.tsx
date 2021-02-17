@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Story from './Story';
-import Features from './Features';
-import GetStarted from './GetStarted';
+import Story from './Story'
+import Features from './Features'
+import GetStarted from './GetStarted'
 
-import styles from './Home.module.less';
+import styles from './Home.module.less'
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <Features />
       <GetStarted />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

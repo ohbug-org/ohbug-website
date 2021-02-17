@@ -34,6 +34,3 @@ const OhbugProvider = client.use(OhbugAngular, ErrorHandler)
 })
 export class AppModule {}
 ```
-
-
-

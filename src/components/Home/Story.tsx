@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import { Button } from '@/components';
+import { Button } from '@/components'
 
-import styles from './Home.module.less';
+import styles from './Home.module.less'
 
 const Story: React.FC = () => (
   <section className={styles.story}>
@@ -22,16 +22,16 @@ const Story: React.FC = () => (
 
         <div className={styles.description}>
           Ohbug
-          是开源的应用信息监控平台。提供异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
+          是开源的应用信息监控套件。提供异常监控、行为采集、性能监控，帮助开发者及时发现追踪改善网站问题，提升用户体验。
         </div>
 
         <Button
           className={styles.try}
           as="a"
-          href="//app.ohbug.net"
+          href="/docs/deploy/Deploy"
           size="large"
         >
-          白嫖一波
+          免费部署
         </Button>
         <Button as="a" href="/docs" size="large" type="text">
           Docs
@@ -57,6 +57,6 @@ const Story: React.FC = () => (
       <path d="M -10 10 q 60 -20 120 0 L 100 20 L 0 20" fill="url(#gradient)" />
     </svg>
   </section>
-);
+)
 
-export default Story;
+export default Story

@@ -1,12 +1,12 @@
-import React from 'react';
-import { connectStateResults } from 'react-instantsearch-dom';
+import React from 'react'
+import { connectStateResults } from 'react-instantsearch-dom'
 
-import styles from './Search.module.less';
+import styles from './Search.module.less'
 
 const Results = connectStateResults(
   ({ searching, searchState, searchResults }) => {
     if (searching)
-      return <div className={styles.resultContent}>Searching...</div>;
+      return <div className={styles.resultContent}>Searching...</div>
     if (searchResults && searchResults.nbHits === 0)
       return (
         <div className={styles.resultContent}>
@@ -15,9 +15,9 @@ const Results = connectStateResults(
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           <strong style={{ color: 'black' }}>"{searchState.query}"</strong>
         </div>
-      );
-    return null;
-  },
-);
+      )
+    return null
+  }
+)
 
-export default Results;
+export default Results
