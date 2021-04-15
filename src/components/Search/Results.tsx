@@ -1,7 +1,7 @@
 import React from 'react'
 import { connectStateResults } from 'react-instantsearch-dom'
 
-import styles from './Search.module.less'
+import * as styles from './Search.module.less'
 
 const Results = connectStateResults(
   ({ searching, searchState, searchResults }) => {

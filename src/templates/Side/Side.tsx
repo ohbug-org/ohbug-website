@@ -5,7 +5,7 @@ import type { Data } from '@/templates/interface'
 import { generateSide } from '@/templates/Side/utils'
 import { Search } from '@/components'
 
-import styles from './Side.module.less'
+import * as styles from './Side.module.less'
 
 interface SideProps {
   data: Data

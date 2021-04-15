@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/atom-one-dark.css'
 
-import styles from './code.module.less'
+import * as styles from './code.module.less'
 
 interface CodeProps {
   [prop: string]: any

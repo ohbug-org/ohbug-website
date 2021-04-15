@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 import { Link } from 'gatsby'
 
-import styles from './MobileHeader.module.less'
+import * as styles from './MobileHeader.module.less'
 
 interface NavItem {
   label: string

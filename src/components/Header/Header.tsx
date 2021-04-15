@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import { Button, MobileHeader } from '@/components'
 
-import styles from './Header.module.less'
+import * as styles from './Header.module.less'
 
 const dataSource = [
   {

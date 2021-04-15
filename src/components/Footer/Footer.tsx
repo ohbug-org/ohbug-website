@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from '@/components'
 
-import styles from './Footer.module.less'
+import * as styles from './Footer.module.less'
 
 const Footer: React.FC = () => {
   return (
@@ -26,14 +26,14 @@ const Footer: React.FC = () => {
             shape="circle"
             type="text"
           >
-            <img src={require('./images/github.svg')} alt="github" />
+            <img src={require('./images/github.svg').default} alt="github" />
           </Button>
 
           <Button className={styles.wechat} shape="circle" type="text">
-            <img src={require('./images/wechat.svg')} alt="wechat" />
+            <img src={require('./images/wechat.svg').default} alt="wechat" />
             <img
               className={styles.qrcode}
-              src={require('./images/wechatQrcode.jpg')}
+              src={require('./images/wechatQrcode.jpg').default}
               alt="wechat qrcode"
             />
           </Button>
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             shape="circle"
             type="text"
           >
-            <img src={require('./images/deploy.svg')} alt="deploy" />
+            <img src={require('./images/deploy.svg').default} alt="deploy" />
           </Button>
         </div>
       </div>

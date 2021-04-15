@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from '@/components'
 
-import styles from './Home.module.less'
+import * as styles from './Home.module.less'
 
 const GetStarted: React.FC = () => (
   <section className={styles.getStarted}>

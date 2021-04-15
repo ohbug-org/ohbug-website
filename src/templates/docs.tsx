@@ -12,7 +12,7 @@ import Nav from '@/templates/Nav'
 import { getGithubUrl } from '@/utils'
 import { generateSide } from '@/templates/Side/utils'
 
-import styles from './docs.module.less'
+import * as styles from './docs.module.less'
 
 const Docs: React.FC<PageProps<Data>> = (props) => {
   const { data } = props

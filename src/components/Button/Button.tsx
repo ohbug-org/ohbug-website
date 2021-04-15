@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 
-import styles from './Button.module.less'
+import * as styles from './Button.module.less'
 
 interface ButtonProps {
   children?: React.ReactNode

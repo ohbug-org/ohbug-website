@@ -8,9 +8,14 @@ import Results from './Results'
 import Hit from './Hit'
 import config from '../../../config.js'
 
-import styles from './Search.module.less'
+import * as styles from './Search.module.less'
 
 const indices = [{ name: config.search.indexName, title: `docs` }]
+
+const searchClient = algoliasearch(
+  config.search.algoliaAppId!,
+  config.search.algoliaSearchKey!
+)
 
 const Search: React.FC = () => {
   const [query, setQuery] = React.useState('')
@@ -18,10 +23,6 @@ const Search: React.FC = () => {
   const inputRef = React.useRef<HTMLInputElement>()
   useClickAway(() => setFocus(false), inputRef)
 
-  const searchClient = algoliasearch(
-    config.search.algoliaAppId,
-    config.search.algoliaSearchKey
-  )
   return (
     <section className={styles.root}>
       <InstantSearch

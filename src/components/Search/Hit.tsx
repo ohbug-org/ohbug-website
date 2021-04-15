@@ -2,7 +2,7 @@ import React from 'react'
 import { Highlight, Snippet } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
 
-import styles from './Search.module.less'
+import * as styles from './Search.module.less'
 
 const Hit: React.FC = ({ hit }: any) => {
   return (

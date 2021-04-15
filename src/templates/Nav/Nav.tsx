@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import type { Mdx } from '@/templates/interface'
 
-import styles from './Nav.module.less'
+import * as styles from './Nav.module.less'
 
 function getLink(item: any, level: number) {
   return (

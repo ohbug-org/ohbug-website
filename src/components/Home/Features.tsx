@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './Home.module.less'
+import * as styles from './Home.module.less'
 
 type DataSource = {
   key: string
@@ -18,7 +18,7 @@ const dataSource: DataSource = [
   {
     key: 'extensions',
     img: {
-      src: require('./images/featuresExtension.svg'),
+      src: require('./images/featuresExtension.svg').default,
       alt: `extensions`,
       props: {
         style: {
@@ -34,7 +34,7 @@ const dataSource: DataSource = [
   {
     key: 'issues',
     img: {
-      src: require('./images/featuresIssue.png'),
+      src: require('./images/featuresIssue.png').default,
       alt: `issues`,
     },
     information: {
@@ -45,7 +45,7 @@ const dataSource: DataSource = [
   {
     key: 'events',
     img: {
-      src: require('./images/featuresEvent.png'),
+      src: require('./images/featuresEvent.png').default,
       alt: `events`,
     },
     information: {
@@ -57,7 +57,7 @@ const dataSource: DataSource = [
   {
     key: 'notification',
     img: {
-      src: require('./images/featuresNotice.svg'),
+      src: require('./images/featuresNotice.svg').default,
       alt: `notification`,
       props: {
         style: {

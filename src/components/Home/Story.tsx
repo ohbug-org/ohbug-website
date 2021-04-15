@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Button } from '@/components'
 
-import styles from './Home.module.less'
+import * as styles from './Home.module.less'
 
 const Story: React.FC = () => (
   <section className={styles.story}>
@@ -12,12 +12,15 @@ const Story: React.FC = () => (
           <span>手动查 Bug</span>
           <img
             className={styles.line}
-            src={require('./images/firstScreenTitleLine.png')}
+            src={require('./images/firstScreenTitleLine.png').default}
             alt="title line"
           />
         </div>
         <div className={styles.newTitle}>
-          <img src={require('./images/firstScreenTitle.svg')} alt="title" />
+          <img
+            src={require('./images/firstScreenTitle.svg').default}
+            alt="title"
+          />
         </div>
 
         <div className={styles.description}>
@@ -26,7 +29,7 @@ const Story: React.FC = () => (
         </div>
 
         <Button
-          className={styles.try}
+          className={styles.trytry}
           as="a"
           href="/docs/deploy/Deploy"
           size="large"
@@ -40,10 +43,13 @@ const Story: React.FC = () => (
       <div className={styles.figure}>
         <img
           className={styles.animate}
-          src={require('./images/firstScreenFigure2.png')}
+          src={require('./images/firstScreenFigure2.png').default}
           alt="figure"
         />
-        <img src={require('./images/firstScreenFigure1.png')} alt="figure" />
+        <img
+          src={require('./images/firstScreenFigure1.png').default}
+          alt="figure"
+        />
       </div>
     </div>
 

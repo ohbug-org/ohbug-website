@@ -26,7 +26,7 @@ const plugins = [
     },
   },
   {
-    resolve: 'gatsby-plugin-less',
+    resolve: `gatsby-plugin-less`,
   },
   {
     resolve: 'gatsby-plugin-typography',

@@ -6,7 +6,7 @@ import { toLine } from '@/utils'
 
 import Code from './Code'
 
-import styles from './Typography.module.less'
+import * as styles from './Typography.module.less'
 
 export default {
   h1: ({ children, ...props }): React.ReactElement => (

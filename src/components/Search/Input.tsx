@@ -1,7 +1,7 @@
 import React from 'react'
 import { connectSearchBox } from 'react-instantsearch-dom'
 
-import styles from './Search.module.less'
+import * as styles from './Search.module.less'
 
 const preventSubmit = (e) => {
   e.preventDefault()

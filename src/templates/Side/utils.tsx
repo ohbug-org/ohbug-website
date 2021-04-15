@@ -5,7 +5,7 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 
 import type { Data } from '../interface'
 
-import styles from './Side.module.less'
+import * as styles from './Side.module.less'
 
 interface NavItem {
   name: string

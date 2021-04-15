@@ -4,7 +4,7 @@ import Story from './Story'
 import Features from './Features'
 import GetStarted from './GetStarted'
 
-import styles from './Home.module.less'
+import * as styles from './Home.module.less'
 
 const Home: React.FC = () => {
   return (
