@@ -26,9 +26,3 @@
 - [Vue](/docs/framework/Vue)
 - [Angular](/docs/framework/Angular)
 - [小程序](/docs/framework/MiniApp)
-
-## 控制台 / Dashboard
-
-- [团队项目](/docs/dashboard/OrganizationProject)
-- [项目设置](/docs/dashboard/SettingProject)
-- [成员设置](/docs/dashboard/SettingMembers)

@@ -6,11 +6,11 @@ module.exports = {
   headline: 'Monitoring & Reporting Tool for App Stability - Ohbug', // Headline for schema.org JSONLD
   url: 'https://ohbug.net', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: '/logos/logo-1024.png', // Used for SEO
+  logo: '/logos/logo.svg', // Used for SEO
   github: 'https://github.com/ohbug-org/ohbug-website',
 
   // JSONLD / Manifest
-  favicon: 'src/favicon.png', // Used for manifest favicon generation
+  favicon: '/logos/logo.svg', // Used for manifest favicon generation
   shortName: 'Ohbug', // shortname for manifest. MUST be shorter than 12 characters
   author: 'chenyueban', // Author for schemaORGJSONLD
 
