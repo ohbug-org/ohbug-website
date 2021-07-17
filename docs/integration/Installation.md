@@ -21,7 +21,7 @@ yarn add @ohbug/browser
 使用 Script 方式接入时需要注意将 Ohbug 脚本放在其他脚本之前，推荐放在 `head` 标签头部。
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@ohbug/browser@1.0.6-alpha.0/dist/ohbug-browser.global.prod.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ohbug/browser@1.0.16/dist/ohbug-browser.umd.min.js"></script>
 <script>
   var client = Ohbug.Client.init({
     apiKey: 'YOUR_API_KEY',
