@@ -1,0 +1,73 @@
+{
+  "name": "ohbug-website",
+  "description": "Ohbug's website and documentation.",
+  "version": "1.0.0",
+  "private": true,
+  "author": "chenyueban <jasonchan0527@gmail.com>",
+  "homepage": "https://github.com/ohbug-org/ohbug-website",
+  "bugs": {
+    "url": "https://github.com/ohbug-org/ohbug-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohbug-org/ohbug-website"
+  },
+  "license": "MIT",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "update:deps": "yarn upgrade-interactive --latest"
+  },
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.6",
+    "@docusaurus/preset-classic": "2.0.0-beta.6",
+    "@docusaurus/theme-bootstrap": "^2.0.0-beta.6",
+    "@docusaurus/theme-search-algolia": "^2.0.0-beta.6",
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "file-loader": "^6.2.0",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@chenyueban/lint": "^1.1.0",
+    "@chenyueban/tsconfig": "^0.2.0",
+    "@docusaurus/module-type-aliases": "2.0.0-beta.6",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "@types/react": "^17.0.14",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-router-dom": "^5.1.8",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
