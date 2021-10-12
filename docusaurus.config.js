@@ -76,8 +76,6 @@ module.exports = {
         appId: process.env.ALGOLIA_APP_ID,
         indexName: 'docs',
 
-        contextualSearch: true,
-
         // Optional: Algolia search parameters
         searchParameters: {},
       },

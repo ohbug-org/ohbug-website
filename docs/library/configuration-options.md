@@ -52,12 +52,12 @@ Ohbug.init({ releaseState: process.env.NODE_ENV })
 
 ### endpoint
 
-选填项。默认值：`https://api.ohbug.net/report`
+选填项。默认值：`http://localhost:6660`
 
-默认情况下 Ohbug 将所有的 `Event` 上报至 `https://api.ohbug.net/report`，当然这个 url 可以通过 `endpoint` 修改。
+默认情况下 Ohbug 将所有的 `Event` 上报至 `http://localhost:6660`，当然这个 url 可以通过 `endpoint` 修改。
 
 ```javascript
-Ohbug.init({ endpoint: 'https://api.ohbug.net/report' })
+Ohbug.init({ endpoint: 'http://localhost:6660' })
 ```
 
 ### maxActions
