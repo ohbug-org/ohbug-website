@@ -1,6 +1,0 @@
-{
-  "extends": "./node_modules/@chenyueban/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": "./"
-  }
-}

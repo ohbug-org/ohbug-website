@@ -1,0 +1,7 @@
+/*.svg
+  cache-control: max-age=604800
+  cache-control: immutable
+
+/*.png
+  cache-control: max-age=604800
+  cache-control: immutable
