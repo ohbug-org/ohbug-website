@@ -23,7 +23,7 @@ const client = Ohbug.setup({ apiKey: 'YOUR_API_KEY' })
 client.use(OhbugExtensionUUID)
 ```
 
-更多内容见 [自定义扩展](../library/custom-extension)。
+更多内容见 [创建扩展](./extension.md#创建扩展)。
 
 ## 更多扩展
 

@@ -24,5 +24,3 @@ Ohbug 支持使用 SourceMap 来反向 JavaScript 代码转换。
 
 - [ohbug-cli](https://github.com/ohbug-org/ohbug-cli)
 - [@ohbug/unplugin](https://github.com/ohbug-org/unplugin-ohbug)
-
-您可以在您的仪表盘: `项目设置(Project Settings) -> SourceMap` 查看或删除 source maps 文件

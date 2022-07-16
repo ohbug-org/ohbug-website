@@ -167,15 +167,15 @@ interface OhbugDevice {
 
 ### user
 
-当前 [用户](user) 的信息。
+当前 [用户](./user.md) 的信息。
 
 ### actions
 
-当前 `Event` 所有的 [`Action`](actions)。
+当前 `Event` 所有的 [`Action`](./action.md)。
 
 ### metaData
 
-当前 `Event` 的 [`MetaData`](meta-data)。
+当前 `Event` 的 [`MetaData`](./meta-data.md)。
 
 ## Event 所能使用的方法
 
@@ -197,6 +197,6 @@ interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
 
 对于这些方法的详细介绍，可参考
 
-- [addAction](actions#addAction)
-- [更改用户数据](user#更改用户数据)
-- [MetaData](meta-data)
+- [addAction](./action.md#addaction)
+- [更改用户数据](./user.md#更改用户数据)
+- [MetaData](./meta-data.md)

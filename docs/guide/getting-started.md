@@ -15,7 +15,7 @@ editLink: true
 pnpm install @ohbug/browser
 ```
 
-[Installation]('./installation.md')
+[Installation](./installation.md)
 
 ## Step.3: Integration
 

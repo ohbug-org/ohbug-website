@@ -73,7 +73,7 @@ Ohbug.setup({ maxActions: 30 })
 
 > 为了防止 `Action` 数过大导致 `Event` 数据量太过庞大，`maxActions` 设置了最大值 `100`
 
-> 有关更多 `Action` 相关的文档，可见 [Actions](actions)
+> 有关更多 `Action` 相关的文档，可见 [Actions](../guide/action.md)
 
 ## created (hooks)
 
@@ -182,7 +182,7 @@ Ohbug.setup({
 })
 ```
 
-> 有关更多修改 `user` 相关的内容，可参考 [更改用户数据](user#更改用户数据)
+> 有关更多修改 `user` 相关的内容，可参考 [更改用户数据](../guide/user.md#更改用户数据)
 
 ## metaData
 
@@ -200,4 +200,4 @@ Ohbug.setup({
 })
 ```
 
-> 有关更多修改 `metaData` 相关的内容，可参考 [MetaData](meta-data)
+> 有关更多修改 `metaData` 相关的内容，可参考 [MetaData](../guide/meta-data.md)

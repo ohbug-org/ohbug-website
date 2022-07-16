@@ -15,4 +15,4 @@ Ohbug.setup({ apiKey: 'YOUR_API_KEY' })
 
 可以在项目设置中找到您的 [apiKey](/)。
 
-如果需要更多的自定义配置，请参阅 [配置选项](../library/configuration-options)。
+如果需要更多的自定义配置，请参阅 [配置选项](../api/api.md)。
