@@ -21,12 +21,6 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.gg/FmxaBSBumM' },
     ],
 
-    algolia: {
-      appId: 'Y4KLHYUFYT',
-      apiKey: '2d935d859ba352d6589b033b8c053354',
-      indexName: 'docs',
-    },
-
     footer: {
       message: 'Released under the Apache License 2.0 License.',
       copyright: 'Copyright © 2022-present ohbug-org',
