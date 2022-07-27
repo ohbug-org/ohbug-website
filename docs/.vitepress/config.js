@@ -54,6 +54,7 @@ function sidebarGuide() {
         { text: 'Basic Configuration', link: '/guide/basic-configuration' },
         { text: 'Reporting Unhandled Errors', link: '/guide/reporting-unhandled-errors' },
         { text: 'Reporting Handled Errors', link: '/guide/reporting-handled-errors' },
+        { text: 'Metrics', link: '/guide/metrics' },
       ],
     },
     {
