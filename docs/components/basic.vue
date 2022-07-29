@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import Ohbug from '@ohbug/browser'
-import JsonViewer from 'vue-json-viewer'
+import JsonViewer from 'vue-json-viewer/ssr'
+import 'vue-json-viewer/style.css'
 
 const data = ref({})
 
