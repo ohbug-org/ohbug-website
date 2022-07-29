@@ -75,26 +75,26 @@ Ohbug.setup({ maxActions: 30 })
 
 > 有关更多 `Action` 相关的文档，可见 [Actions](../guide/action.md)
 
-## created (hooks)
+## onEvent (hooks)
 
 选填项。默认值：`event => event`
 
-如果你需要在上报前对 `Event` 进行修改亦或是阻止上报，`created` 提供了做到这些事情的能力。
+如果你需要在上报前对 `Event` 进行修改亦或是阻止上报，`onEvent` 提供了做到这些事情的能力。
 
 ```javascript
 Ohbug.setup({
-  created: (event, client) => {
+  onEvent: (event, client) => {
     // do something
     return event
   },
 })
 ```
 
-如果需要阻止上报，在 `created` 内返回 `false` 即可。
+如果需要阻止上报，在 `onEvent` 内返回 `false` 即可。
 
 ```javascript
 Ohbug.setup({
-  created: (event, client) => {
+  onEvent: (event, client) => {
     // do something
 
     if (condition) {
@@ -106,9 +106,9 @@ Ohbug.setup({
 })
 ```
 
-> 请谨慎使用 `created` 回调，在 Ohbug 的扩展系统设计中，当前扩展 `created` 所返回的内容将传递给下一个插件。
+> 请谨慎使用 `onEvent` 回调，在 Ohbug 的扩展系统设计中，当前扩展 `onEvent` 所返回的内容将传递给下一个插件。
 
-## notified (hooks)
+## onNotify (hooks)
 
 选填项。默认值：`() => {}`
 
@@ -116,7 +116,7 @@ Ohbug.setup({
 
 ```javascript
 Ohbug.setup({
-  notified: (event, client) => {
+  onNotify: (event, client) => {
     // do something
   },
 })
@@ -200,4 +200,4 @@ Ohbug.setup({
 })
 ```
 
-> 有关更多修改 `metaData` 相关的内容，可参考 [MetaData](../guide/meta-data.md)
+> 有关更多修改 `metaData` 相关的内容，可参考 [Metadata](../guide/metadata.md)

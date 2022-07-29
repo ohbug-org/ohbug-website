@@ -23,6 +23,10 @@
     "prepare": "husky install",
     "release": "release-it"
   },
+  "dependencies": {
+    "@ohbug/browser": "^2.1.1",
+    "vue-json-viewer": "3"
+  },
   "devDependencies": {
     "@chenyueban/eslint-config": "^1.0.12",
     "@commitlint/cli": "^17.0.3",

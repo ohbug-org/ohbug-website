@@ -9,8 +9,8 @@ editLink: true
 
 ## 安装
 
-```shell
-pnpm instal @ohbug/browser @ohbug/react
+```sh
+pnpm i @ohbug/browser @ohbug/react
 ```
 
 ## 使用

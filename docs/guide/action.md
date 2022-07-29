@@ -53,11 +53,10 @@ interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
 
 假设我们需要将某个注册按钮的点击作为 `Action` 记录。
 
+```html
+<button id="login">登录</button>
+```
 ```javascript
-// html
-<button id=login>登录</button>
-
-// js
 import Ohbug from '@ohbug/browser'
 const client = Ohbug.setup({ YOUR_API_KEY })
 

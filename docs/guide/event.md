@@ -29,7 +29,7 @@ interface OhbugClient {
   // ...
   createEvent: <D = any>(
     value: OhbugCreateEvent<D>
-  ) => OhbugEventWithMethods<D> | false
+  ) => OhbugEventWithMethods<D> | null
 }
 ```
 
@@ -63,8 +63,8 @@ interface OhbugClient {
   notify: <D = any>(
     eventLike: any,
     beforeNotify?: (
-      event: OhbugEventWithMethods<D> | false
-    ) => OhbugEventWithMethods<D> | false
+      event: OhbugEventWithMethods<D> | null
+    ) => OhbugEventWithMethods<D> | null
   ) => Promise<any | null>
 }
 ```
@@ -82,12 +82,13 @@ interface OhbugEvent<D> {
   timestamp: string
   category?: OhbugCategory
   type: string
+  sdk: OhbugSDK
 
   detail: D
   device: OhbugDevice
   user?: OhbugUser
   actions?: OhbugAction[]
-  metaData?: any
+  metadata?: OhbugMetadata
 }
 ```
 
@@ -129,21 +130,39 @@ type OhbugCategory =
 
 `Event` 所属的小类 (细分类型)。
 
-```javascript
-// error
-export const UNCAUGHT_ERROR = 'uncaughtError' // 意料之外的错误
-export const RESOURCE_ERROR = 'resourceError' // 资源加载错误
-export const UNHANDLEDREJECTION_ERROR = 'unhandledrejectionError' // unhandledrejection 错误，可能包含 Promise, react render 等错误
-export const AJAX_ERROR = 'ajaxError' // ajax 错误
-export const FETCH_ERROR = 'fetchError' // fetch 错误
-export const WEBSOCKET_ERROR = 'websocketError' // websocket 错误
-export const UNKNOWN_ERROR = 'unknownError' // 未知错误
-// message
-export const MESSAGE = 'message' // 主动上报的信息
-// view
-export const VIEW = 'view' // 用于计算 PV/UV
+```typescript
+const enum EventTypes {
+  // error
+  UNCAUGHT_ERROR = 'uncaughtError', // 意料之外的错误
+  RESOURCE_ERROR = 'resourceError', // 资源加载错误
+  UNHANDLEDREJECTION_ERROR = 'unhandledrejectionError', // unhandledrejection 错误，可能包含 Promise, react render 等错误
+  AJAX_ERROR = 'ajaxError', // ajax 错误
+  FETCH_ERROR = 'fetchError', // fetch 错误
+  WEBSOCKET_ERROR = 'websocketError', // websocket 错误
+  UNKNOWN_ERROR = 'unknownError', // 未知错误
+  // message
+  MESSAGE = 'message', // 主动上报的信息
+  // feedback
+  FEEDBACK = 'feedback', // 反馈
+  // view
+  VIEW = 'view', // 用于计算 PV/UV
+  // react
+  REACT = 'react',
+  // vue
+  VUE = 'vue',
+  // angular
+  ANGULAR = 'angular',
+  // miniapp
+  MINIAPP_ERROR = 'miniappError',
+  MINIAPP_UNHANDLEDREJECTION_ERROR = 'miniappUnhandledrejectionError',
+  MINIAPP_PAGENOTFOUND_ERROR = 'miniappPagenotfoundError',
+  MINIAPP_MEMORYWARNING_ERROR = 'miniappMemorywarningError',
+}
 ```
 
+### sdk
+
+Ohbug sdk 相关版本、平台信息
 ### detail
 
 `Event` 的具体数据。
@@ -153,15 +172,14 @@ export const VIEW = 'view' // 用于计算 PV/UV
 当前设备的信息。
 
 ```typescript
-type OhbugPlatform = 'browser' | 'node' | string
 interface OhbugDevice {
-  platform: OhbugPlatform // 当前平台的类型
-  version: string // 当前 Ohbug 版本号
   // browser
-  language?: string // 当前语言
-  userAgent?: string // 当前 userAgent
-  title?: string // 当前页面标题
-  url?: string // 当前页面 url
+  language?: string
+  userAgent?: string
+  title?: string
+  url?: string
+
+  [key: string]: any
 }
 ```
 
@@ -175,7 +193,7 @@ interface OhbugDevice {
 
 ### metaData
 
-当前 `Event` 的 [`MetaData`](./meta-data.md)。
+当前 `Event` 的 [`Metadata`](./metadata.md)。
 
 ## Event 所能使用的方法
 
@@ -189,9 +207,9 @@ interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
   ) => void
   getUser: () => OhbugUser | undefined
   setUser: (user: OhbugUser) => OhbugUser | undefined
-  addMetaData: (section: string, data: any) => any
-  getMetaData: (section: string) => any
-  deleteMetaData: (section: string) => any
+  addMetadata: (section: string, data: any) => any
+  getMetadata: (section: string) => any
+  deleteMetadata: (section: string) => any
 }
 ```
 
@@ -199,4 +217,4 @@ interface OhbugEventWithMethods<D> extends OhbugEvent<D> {
 
 - [addAction](./action.md#addaction)
 - [更改用户数据](./user.md#更改用户数据)
-- [MetaData](./meta-data.md)
+- [Metadata](./metadata.md)

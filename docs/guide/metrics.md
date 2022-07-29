@@ -9,7 +9,7 @@ editLink: true
 
 ## Installation
 
-```shell
+```sh
 pnpm i web-vitals @ohbug/extension-web-vitals
 ```
 

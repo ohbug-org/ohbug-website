@@ -11,7 +11,7 @@ editLink: true
 
 这里用 `@ohbug/extension-uuid` 举例，这个扩展可以帮你在每一条 `Event` 上设置 `UUID`。
 
-```shell
+```sh
 yarn add @ohbug/extension-uuid
 ```
 

@@ -9,8 +9,8 @@ editLink: true
 
 ## 安装
 
-```shell
-pnpm instal @ohbug/browser @ohbug/angular
+```sh
+pnpm i @ohbug/browser @ohbug/angular
 ```
 
 ## 使用

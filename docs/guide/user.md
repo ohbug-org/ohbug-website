@@ -10,7 +10,7 @@ editLink: true
 ```typescript
 interface OhbugUser {
   uuid?: string
-  ip_address?: string
+  ipAddress?: string
   id?: number | string
   name?: string
   email?: string
@@ -50,7 +50,7 @@ client.setUser({
 
 ```javascript
 Ohbug.setup({
-  created: (event) => {
+  onEvent: (event) => {
     event.setUser({
       id: '1',
       name: 'Ohbug',

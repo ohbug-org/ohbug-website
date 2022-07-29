@@ -43,18 +43,7 @@ function sidebarGuide() {
       items: [
         { text: 'What is Ohbug?', link: '/guide/what-is-ohbug' },
         { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Deploying', link: '/guide/deploying' },
-      ],
-    },
-    {
-      text: 'Integration',
-      collapsible: true,
-      items: [
-        { text: 'Installation', link: '/guide/installation' },
-        { text: 'Basic Configuration', link: '/guide/basic-configuration' },
-        { text: 'Reporting Unhandled Errors', link: '/guide/reporting-unhandled-errors' },
-        { text: 'Reporting Handled Errors', link: '/guide/reporting-handled-errors' },
-        { text: 'Metrics', link: '/guide/metrics' },
+        { text: 'Dashboard', link: '/guide/dashboard' },
       ],
     },
     {
@@ -63,10 +52,11 @@ function sidebarGuide() {
       items: [
         { text: 'Event', link: '/guide/event' },
         { text: 'Action', link: '/guide/action' },
-        { text: 'MetaData', link: '/guide/meta-data' },
+        { text: 'Metadata', link: '/guide/metadata' },
         { text: 'User', link: '/guide/user' },
         { text: 'SourceMap', link: '/guide/source-map' },
         { text: 'Extension', link: '/guide/extension' },
+        { text: 'Metrics', link: '/guide/metrics' },
       ],
     },
     {

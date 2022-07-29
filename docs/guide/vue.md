@@ -9,8 +9,8 @@ editLink: true
 
 ## 安装
 
-```shell
-pnpm instal @ohbug/browser @ohbug/vue
+```sh
+pnpm i @ohbug/browser @ohbug/vue
 ```
 
 ## 使用

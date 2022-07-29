@@ -20,7 +20,7 @@ Ohbug 小程序 SDK 用于小程序平台（支持微信、字节跳动、支付
 
 1. 安装依赖
 
-```shell
+```sh
 yarn add @ohbug/miniapp
 ```
 
