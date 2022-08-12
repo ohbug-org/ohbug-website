@@ -27,9 +27,7 @@ client.use(OhbugExtensionUUID)
 
 ## 更多扩展
 
-- [@ohbug/extension-perfume](https://github.com/ohbug-org/ohbug/tree/master/packages/ohbug-extension-perfume): 封装 [perfume.js](https://github.com/Zizzamia/perfume.js)，用于收集性能信息。
-- [@ohbug/extension-rrweb](https://github.com/ohbug-org/ohbug/tree/master/packages/ohbug-extension-rrweb): 封装 [rrweb](https://github.com/rrweb-io/rrweb)，用于“录屏”。
-- [@ohbug/extension-uuid](https://github.com/ohbug-org/ohbug/tree/master/packages/ohbug-extension-uuid): 扩展 `Event.user` 增加 `UUID` 标识。
+- [The one-stop shop for official Ohbug extensions](https://github.com/ohbug-org/extensions)
 
 ## 创建扩展
 

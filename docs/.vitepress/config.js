@@ -54,9 +54,11 @@ function sidebarGuide() {
         { text: 'Action', link: '/guide/action' },
         { text: 'Metadata', link: '/guide/metadata' },
         { text: 'User', link: '/guide/user' },
-        { text: 'SourceMap', link: '/guide/source-map' },
         { text: 'Extension', link: '/guide/extension' },
         { text: 'Metrics', link: '/guide/metrics' },
+        { text: 'Feedbacks', link: '/guide/feedbacks' },
+        { text: 'Releases', link: '/guide/releases' },
+        { text: 'SourceMap', link: '/guide/source-map' },
       ],
     },
     {
