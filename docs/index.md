@@ -2,12 +2,12 @@
 layout: home
 
 title: Ohbug
-titleTemplate: An open source application information monitoring platform.
+titleTemplate: Self-hosted application monitoring that helps software teams quickly find and fix production errors.
 
 hero:
   name: Ohbug
-  text: An open source application information monitoring platform.
-  tagline: Simple, powerful, and performant.
+  text: Self-hosted application monitoring that helps software teams quickly find and fix production errors.
+  tagline: 一键私有部署 帮助开发团队快速发现线上问题的前端监控套件
   actions:
     - theme: brand
       text: Get Started
@@ -19,8 +19,8 @@ hero:
 features:
   - title: The Complete Error Monitoring
     details: Rich, end-to-end diagnostics to help you reproduce every error.
-  - title: Context, uncovered
-    details: Source code, error filters, stack locals — Ohbug enhances application performance monitoring with stack traces.
+  - title: Self hosted
+    details: Save privacy data troubles.
   - title: Trail of events, discovered
     details: Actions make application development a little easier by showing you the trails of events that lead to the error(s).
   - title: Delightful To Use

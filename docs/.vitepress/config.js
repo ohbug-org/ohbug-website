@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Ohbug',
-  description: 'An open source application information monitoring platform.',
+  description: 'Self-hosted application monitoring that helps software teams quickly find and fix production errors.',
   themeConfig: {
     nav: nav(),
 
