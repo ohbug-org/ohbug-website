@@ -7,6 +7,15 @@ editLink: true
 
 [Ohbug 控制台](https://github.com/ohbug-org/ohbug-dashboard) 建立在 [NestJS](https://nestjs.com/)、[NextJS](https://nextjs.org/)、[Prisma](https://www.prisma.io/) 和 [Postgresql](https://www.postgresql.org/) 之上，并提供了一套渐进式可扩展的使用模型，帮助你快速有效地收集异常数据。
 
+## Get Demo
+
+[Demo](http://app.ohbug.net/)
+```
+// 预览账号及密码
+test@ohbug.net
+12345678
+```
+
 ## 通过 Docker 快速私有部署
 
 1. 配置文件 [`ohbug.config.yml`](https://github.com/ohbug-org/ohbug-dashboard/blob/main/ohbug.config.yml)
