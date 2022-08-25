@@ -17,7 +17,7 @@ hero:
       link: https://github.com/ohbug-org/ohbug
     - theme: alt
       text: Get Demo
-      link: http://app.ohbug.net
+      link: /guide/dashboard#get-demo
 
 features:
   - title: The Complete Error Monitoring
