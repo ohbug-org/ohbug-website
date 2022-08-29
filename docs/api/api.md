@@ -90,7 +90,7 @@ Ohbug.setup({
 })
 ```
 
-如果需要阻止上报，在 `onEvent` 内返回 `false` 即可。
+如果需要阻止上报，在 `onEvent` 内返回 `null` 即可。
 
 ```javascript
 Ohbug.setup({
@@ -99,7 +99,7 @@ Ohbug.setup({
 
     if (condition) {
       // 将阻止上报
-      return false
+      return null
     }
     return event
   },

@@ -14,9 +14,11 @@ interface OhbugUser {
   id?: number | string
   name?: string
   email?: string
-  [key: string]: any
+  metadata?: any
 }
 ```
+
+额外的 User 信息请写入 `metadata`
 
 ## 更改用户数据
 
