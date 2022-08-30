@@ -29,6 +29,8 @@ test@ohbug.net
 docker-compose up --build -d
 ```
 
-4. 启动后控制台前端端口默认为 `3000` 后端端口默认为 `6660`。首次打开控制台前端地址需要输入 `Github OAuth Client Id/Secret` 用于 Github 授权登录。你可以 [查看 Github 创建 OAuth 应用程序](https://docs.github.com/developers/apps/building-oauth-apps/creating-an-oauth-app)。
+4. 启动后控制台前端端口默认为 `3000` 后端端口默认为 `6660`。
 
-5. 使用你的 Github 账号授权登录。
+::: tip
+Github 登录需要在 `ohbug.config.yml` 文件内配置 `oauth - github` 项，你可以 [查看 Github 创建 OAuth 应用程序](https://docs.github.com/developers/apps/building-oauth-apps/creating-an-oauth-app)。
+:::
