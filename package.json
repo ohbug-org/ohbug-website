@@ -24,21 +24,21 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@ohbug/browser": "^2.1.1",
+    "@ohbug/browser": "^2.3.0",
     "vue-json-viewer": "3"
   },
   "devDependencies": {
     "@chenyueban/eslint-config": "^1.0.12",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@release-it/conventional-changelog": "^5.0.0",
-    "commitizen": "^4.2.4",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@release-it/conventional-changelog": "^5.1.0",
+    "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.19.0",
+    "eslint": "^8.23.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "release-it": "^15.1.1",
-    "vitepress": "1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "release-it": "^15.4.1",
+    "vitepress": "1.0.0-alpha.13",
+    "vue": "^3.2.39"
   }
 }

@@ -34,3 +34,35 @@ docker-compose up --build -d
 ::: tip
 Github 登录需要在 `ohbug.config.yml` 文件内配置 `oauth - github` 项，你可以 [查看 Github 创建 OAuth 应用程序](https://docs.github.com/developers/apps/building-oauth-apps/creating-an-oauth-app)。
 :::
+
+## HTTPS 配置
+
+Ohbug 默认不启用 https，但是内置了 https 配置。使用 nginx 代理实现 https 支持，如果你需要使用 https 则需要提前准备 https ssl 证书以及如下配置：
+
+1. 创建 nginx 配置文件 [nginx.conf](https://github.com/ohbug-org/ohbug-dashboard/blob/main/nginx.conf)。
+
+::: tip
+`ssl_certificate` `ssl_certificate_key` 这两项需要填写 ssl 证书路径，默认会取 `docker-compose.yml` 同级目录下 `secrets` 目录中的文件
+:::
+
+2. `docker-compose.yml` 中配置 nginx：
+
+```yaml
+# ...
+nginx:
+  image: nginx:alpine
+  restart: always
+  ports:
+    - '3001:3001'
+    - '6661:6661'
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf
+    - ./logs:/var/log/nginx
+    - ./secrets:/app/secrets
+  depends_on:
+    - app
+```
+
+::: tip
+以上配置默认 `nginx.conf` 和 `secrets` 在与 `docker-compose.yml` 文件同级目录中，如有需要则需根据需要进行调整
+:::
